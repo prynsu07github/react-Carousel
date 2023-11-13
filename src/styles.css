@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slider {
+  width: 600px;
+  overflow: hidden;
+}
+
+.slider_images {
+  display: flex;
+  object-fit: cover;
+  transition: all 0.8s ease;
+}
+
+.slider_images img {
+  height: 400px;
+  width: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .slider {
+    width: 300px;
+    height: auto;
+  }
+  .slider_images img {
+    width: 300px;
+    height: auto;
+  }
+}
